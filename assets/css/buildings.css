@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.texto-interna{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+
+.slick-slide>div>div {
+  padding: 0px 25px;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-current .imagem {
+  background-color: #ff4800;
+  opacity: .9;
+}
+
+.slick-current img {
+  filter: opacity(.2);
+  transition: all ease-in-out .5s;
+}
+
+.slick-prev {
+  position: absolute;
+  left: -2%;
+  top: 35%;
+  width: 3%;
+}
+
+.slick-next {
+  position: absolute;
+  right: -2%;
+  top: 35%;
+  width: 4%;
+}
+
+#navbar {
+  position: fixed;
+  /* Make it stick/fixed */
+  top: 0;
+  /* Stay on top */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
+
+#navbar2 {
+  position: fixed;
+  /* Make it stick/fixed */
+  top: -100px;
+  /* Stay on top */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
+
+#desc {
+  font-size: 100%;
+}
+
+#desc2 {
+  position: absolute;
+  top: -7%;
+  left: -5%;
+}
+
+#desc3 {
+  top: -10%;
+  left: -5%;
+}
+
+.content {
+  position: relative;
+  padding: 5% 3% 5% 3%;
+  border: 3px solid #bbbbbb;
+  border-radius: 0% 0% 40px 0%;
+}
+
+.content img {
+  position: absolute;
+  width: 14%;
+  top: -15%;
+  left: -5%;
+}
+
+#navbarTogglerDemo01 {
+  margin: auto !important;
+}

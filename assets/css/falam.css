@@ -1,0 +1,197 @@
+.bg-primary {
+
+    background-color: #002e46!important;
+
+  }
+
+  
+
+  .efeito {
+    margin-top: 7px;
+    background-color: #fff;
+    height: 10px;
+    width: 50px;
+    display: block;
+    margin: auto;
+  }
+
+  
+
+  .destaques h4 span {
+
+    color:#fff;
+
+    background-color: #002e46;
+
+    margin-right:1.25em; 
+
+    display:inline-block;
+
+  }
+
+  
+
+  .destaques {
+
+    background-color: #cccccc;
+
+    border-bottom: 20px;
+
+  }
+
+
+
+.falam-clean {
+
+    color: #313437;
+
+    background-color: #fff;
+
+  }
+
+  
+
+  .falam-clean p {
+
+    color: #7d8285;
+
+  }
+
+  
+
+  .falam-clean h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-top: 40px;
+    color: inherit;
+    text-align: center;
+  }
+
+  
+
+  @media (max-width:767px) {
+
+    .falam-clean h2 {
+
+      margin-bottom: 25px;
+
+      padding-top: 25px;
+
+      font-size: 24px;
+
+    }
+
+  }
+
+  
+
+  .falam-clean .intro {
+
+    font-size: 16px;
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+  }
+
+  
+
+  .falam-clean .intro p {
+
+    margin-bottom: 0;
+
+  }
+
+  
+
+  .falam-clean{
+
+    padding-bottom: 40px;
+
+  }
+
+  .people {
+
+    padding-bottom: 0px;
+
+  }
+
+  .falam-clean .item {
+
+    text-align: center;
+
+    padding-top: 50px;
+    padding: 50px 50px;
+  }
+
+  
+
+  .falam-clean .item .name {
+
+    font-weight: bold;
+
+    margin-top: 28px;
+
+    margin-bottom: 8px;
+
+    color: inherit;
+
+  }
+
+  
+
+  .falam-clean .item .title {
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+    color: #d0d0d0;
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+
+  }
+
+  
+
+  .falam-clean .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-style: italic;
+    color: #eeeeee !important;
+  }
+  .falam-clean .item .description--2 {
+    text-align: right;
+  }
+
+  .falam-clean .owl-prev{
+    position: absolute;
+    top: 21%;
+    left: -65px;
+    font-size: 80px !important;
+  }
+  .falam-clean .owl-next{
+    position: absolute;
+    top: 21%;
+    right: -65px;
+    font-size: 80px !important;
+  }
+  
+
+  .falam-clean .item img {
+
+    max-width: 160px;
+    display: block;
+    margin: auto;
+  }
+
+  
+
+
+
+  
