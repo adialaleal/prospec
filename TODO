@@ -1,0 +1,15 @@
+***To Do***
+
+- Recode static navbar;
+- Recode scrolled navbar;
+    - The scrollable navbar may follow these preferences:
+        .scrolled-navbar{
+          width: 906px;
+          height: 65px;
+          align: center;
+        }
+- Make php form works
+
+- 
+
+- PHP calling Linux sendmail function.

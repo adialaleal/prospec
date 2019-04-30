@@ -1,176 +1,185 @@
+<script src="assets/js/jquery-2-2.0.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script src="assets/js/sticky.js"></script>
 
-    <script src="assets/js/jquery-2-2.0.min.js" type="text/javascript"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#phone').mask('(00) 00000-0000');
+	});
 
-    <script>
-        $(document).ready(function(){
-            $('#message').mask('(00) 00000-0000');
-        });
-        $("#contactform").submit(function( event ) {
-            event.preventDefault();
-            window.location.href = 'https://prospecconstrucoes.com.br/obrigado?name=' + $("#name").val() + '&email=' + $("#email").val() + '&message=' + $("#message").val() + '';
-        });
-    </script>
+</script>
 
-    <script type="text/javascript">
-        var prevScrollpos = window.pageYOffset;
-        var aux = 0;
-        $("#img-marca2").hide();
+<script type="text/javascript">
+	var prevScrollpos = window.pageYOffset;
+	var aux = 0;
+	$("#img-marca2").hide();
 
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (window.pageYOffset < 10) {
-                aux = 1;
-                $("#img-marca2").fadeOut();
-                $("#navbar2").css("position", "relative");
-                $("#li-marca2").css("background-color", "#002e46");
-                document.getElementById("link-logo-nav").style.top = "10.5%";
-            } else {
-                if(aux == 1){
-                    // $("#navbar2").css("position", "fixed");
-                    // $("#navbar").toggle();
-                }
-                $("#li-marca2").css("background-color", "white");
-                $("#img-marca2").fadeIn();
-
-                document.getElementById("link-logo-nav").style.top = "-205%";
-                $("#navbar2").css("position", "fixed");
-
-                aux = 0;
-                // document.getElementById("navbar").style.top = "-100px";
-                // document.getElementById("navbar2").style.top = "0";
-            }
-
-            if (window.pageYOffset < 30) {
-                $("#footer").css("position", "inherit");
-                $("#contato").css("margin-bottom", "0%");
-            }else{
-                $("#footer").css("position", "fixed");
-                $("#contato").css("margin-bottom", "4.7%");
-            }
-
-            prevScrollpos = currentScrollPos;
-        }
+	function change() {
+		navbar = document.getElementsByClassName("navbartop")[0];
+		if (window.scrollTop > 8) {
+			//show
+			navbar.style.display = "block";
+		} else {
+			//hide
+			navbar.style.display = "none";
+		}
+	}
 
 
-        $(document).on('ready', function () {
 
-            $(".variable").slick({
-                dots: false,
-                infinite: true,
-                centerMode: true,
-                variableWidth: true
-            });
+	window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		if (window.pageYOffset < 10) {
+			aux = 1;
+			$("#img-marca2").fadeOut();
+			$("#navbar2").css("position", "relative");
+			$("#li-marca2").css("background-color", "#002e46");
+			document.getElementById("link-logo-nav").style.top = "10.5%";
+		} else {
+			if (aux == 1) {
+				// $("#navbar2").css("position", "fixed");
+				// $("#navbar").toggle();
+			}
+			$("#li-marca2").css("background-color", "white");
+			$("#img-marca2").fadeIn();
 
-        });
-    </script>
+			document.getElementById("link-logo-nav").style.top = "-205%";
+			$("#navbar2").css("position", "fixed");
 
-    <script>
+			aux = 0;
+			// document.getElementById("navbar").style.top = "-100px";
+			// document.getElementById("navbar2").style.top = "0";
+		}
 
-        // $( document ).ready(function(){
-        //     $('.button-collapse').sideNav({
-        //         closeOnClick: true
-        //         }
-        //     );
-        // });
+		if (window.pageYOffset < 30) {
+			$("#footer").css("position", "inherit");
+			$("#contato").css("margin-bottom", "0%");
+		} else {
+			$("#footer").css("position", "fixed");
+			$("#contato").css("margin-bottom", "4.7%");
+		}
 
-        // (function($){
-        //     $(function(){
-
-        //         $('.sidenav').sidenav();
-
-        //     }); // end of document ready
-        // })(jQuery); // end of jQuery name space
-
-        $('.carousel1').owlCarousel({
-            autoplay: true,
-            loop: true,
-            dots: false,
-            singleItem:true,
-            autoHeight:true,
-            transitionStyle: 'fadeUp',
-            responsive: {
-                0: {
-                    items: 1
-                },
-                200: {
-                    items: 1
-                },
-                500: {
-                    items: 1
-                }
-            }
-        });
-        $('.people.owl-carousel').owlCarousel({
-            autoplay: false,
-            loop: true,
-            dots: false,
-            autoHeight:true,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                200: {
-                    items: 1
-                },
-                500: {
-                    items: 2
-                }
-            }
-        });
-        $('.carousel2').owlCarousel({
-            autoplay: false,
-            center: true,
-            margin: 50,
-            loop: true,
-            nav: true,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                200: {
-                    items: 2
-                },
-                500: {
-                    items: 3
-                }
-            }
-        });
-
-        $('.propertycarousel').owlCarousel({
-            loop:true,
-            margin:10,
-            responsiveClass:true,
-            navText: ["<img src='assets/images/before.png'/>", "<img src='assets/images/next.png'/>"],
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:2,
-                    nav:false
-                },
-                1000:{
-                    items:3,
-                    nav:true,
-                    loop:false
-                },
-                1400:{
-                    items:3,
-                    nav:true,
-                    loop:false
-                }
-            }
-        });
+		prevScrollpos = currentScrollPos;
+	}
 
 
-    </script>
+	$(document).on('ready', function() {
+
+		$(".variable").slick({
+			dots: false,
+			infinite: true,
+			centerMode: true,
+			variableWidth: true
+		});
+
+	});
+
+</script>
+
+<script>
+	// $( document ).ready(function(){
+	//     $('.button-collapse').sideNav({
+	//         closeOnClick: true
+	//         }
+	//     );
+	// });
+
+	// (function($){
+	//     $(function(){
+
+	//         $('.sidenav').sidenav();
+
+	//     }); // end of document ready
+	// })(jQuery); // end of jQuery name space
+
+	$('.carousel1').owlCarousel({
+		autoplay: true,
+		loop: true,
+		dots: false,
+		singleItem: true,
+		autoHeight: true,
+		transitionStyle: 'fadeUp',
+		responsive: {
+			0: {
+				items: 1
+			},
+			200: {
+				items: 1
+			},
+			500: {
+				items: 1
+			}
+		}
+	});
+	$('.people.owl-carousel').owlCarousel({
+		autoplay: false,
+		loop: true,
+		dots: false,
+		autoHeight: true,
+		nav: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			200: {
+				items: 1
+			},
+			500: {
+				items: 2
+			}
+		}
+	});
+	$('.carousel2').owlCarousel({
+		autoplay: false,
+		center: true,
+		margin: 50,
+		loop: true,
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			200: {
+				items: 2
+			},
+			500: {
+				items: 3
+			}
+		}
+	});
+
+	$('.propertycarousel').owlCarousel({
+		loop: true,
+		margin: 10,
+		responsiveClass: true,
+		navText: ["<img src='assets/images/before.png'/>", "<img src='assets/images/next.png'/>"],
+		responsive: {
+			0: {
+				items: 1,
+				nav: true
+			},
+			600: {
+				items: 2,
+				nav: false
+			},
+			1000: {
+				items: 3,
+				nav: true,
+				loop: false
+			},
+			1400: {
+				items: 3,
+				nav: true,
+				loop: false
+			}
+		}
+	});
+
+</script>
 </body>
 
 </html>

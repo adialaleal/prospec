@@ -1,6 +1,6 @@
 <?php include_once "assets/includes/header.html" ?>
-<?php include_once 'assets/includes/navbar.html'?>
-<?php include_once 'assets/includes/navbar-expanded.html'?>
+<?php include_once "assets/includes/navbar2.html"?>
+<?php include_once "assets/includes/navbar-expanded.html"?>
 
 
     <!-- Div Caroussel -->
@@ -18,7 +18,7 @@
     <!-- Div Caroussel -->
 
     <!-- Middle Bar -->
-    <?php include_once 'middlebar.html'; ?>
+    <?php include_once 'assets/includes/middlebar.html'; ?>
     <!-- Middle Bar -->
 
 
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="imagem"><img src="assets/images/paulofreire.png"></div>
+                    <div class="imagem"><img src="assets/images/residencial-paulo-freire-pq.png"></div>
                     <div style="text-align: left; padding-top: 2%;">
                         <strong style="font-weight: bold;">Residencial Paulo Freire</strong>
                         <p>Quadra 608 de Samambaia</p>
@@ -321,5 +321,5 @@
     <a class="anchor" id="contato"></a>
 
     <?php include_once 'assets/includes/footer.php' ?>
-    <?php include_once 'assets/includes/footer-whatsapp.html' ?>
+    <?php // include_once 'assets/includes/footer-whatsapp.html' ?>
     <?php include_once 'assets/includes/indexdownside.html' ?>
